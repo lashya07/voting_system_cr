@@ -22,7 +22,7 @@ Download and install XAMPP from: [https://www.apachefriends.org/download.html](h
 
 ### 2. Clone the Repository
 ```sh
-git clone https://github.com/PAWANKUMAR7842/voting_system.git
+https://github.com/lashya07/voting_system_cr.git
 ```
 
 ### 3. Move Project to XAMPP htdocs Folder
