@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <link rel="icon" href="../images/online-voting.png">
+    <link rel="stylesheet" href="../htmll/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body class="feedback-body">
+    <nav>
+        <img src="../images/gif.gif" class="logo" alt="Logo" title="E-voting">
+        <ul class="navbar">
+            <li>
+                <a href="../htmll/login.html">Home</a>
+                <a href="../htmll/admin_login.html">Admin</a>
+                <a href="../htmll/feedback.html">Feedback</a>
+                <a href="../php/logout.php">Logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <div class="login">
+                <h1>Login</h1>
+                <form action="../php/login1.php" method="POST">
+                    <!-- Add name attributes to the input fields -->
+                    <input type="text" id="name" name="reg_no" placeholder="Registration Number" class="user" required>
+                    <input type="email" id="email" name="email" placeholder="Email" class="user" required>
+                    <input type="submit" name="Register" value="Register" class="login-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

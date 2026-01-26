@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../htmll/styles.css">
+    <link rel="icon" href="../images/online-voting.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        /* Input Field Styles */
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f1f1f1; /* Light gray background */
+            color: #333; /* Dark text */
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            border-color: cyan; /* Cyan border on focus */
+            box-shadow: 0 0 10px cyan; /* Glowing effect */
+            background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+        }
+
+        /* Textarea Styles */
+        .container{
+            position: relative;
+            bottom: -30px;
+        }
+        textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f1f1f1; /* Light gray background */
+            color: #333; /* Dark text */
+            resize: vertical; /* Allow vertical resizing */
+            transition: all 0.3s ease;
+        }
+
+        textarea:focus {
+            border-color: cyan; /* Cyan border on focus */
+            box-shadow: 0 0 10px cyan; /* Glowing effect */
+            background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+        }
+
+        /* Submit Button Styles */
+        .login-btn1 {
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            background: #0f3460; /* Dark blue button */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            color: #ffffff; /* White text */
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn1:hover {
+            background: #1a1a2e; /* Darker blue on hover */
+            border: 2px solid #0f3460;
+            box-shadow: inset 0 1px 2px rgba(27, 27, 27, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 14px;
+            }
+
+            .login-btn1 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 12px;
+            }
+
+            .login-btn1 {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body class="feedback-body">
+    <nav>
+        <img src="../images/gif.gif" class="logo" alt="Logo" title="E-voting">
+        <ul class="navbar">
+            <li>
+                <a href="../htmll/login.html">Home</a>
+                <a href="../htmll/admin_login.html">Admin</a>
+                <a href="../htmll/feedback.html">Feedback</a>
+                <a href="../php/logout.php">Logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <div class="login">
+                <h1>Feedback</h1>
+                <form action="../php/submit_feedback.php" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Your Name" class="user" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" class="user" required>
+                    <textarea id="feedback" name="feedback" placeholder="Your Feedback" class="user" rows="3" required></textarea>
+                    <button type="submit" class="login-btn1">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
