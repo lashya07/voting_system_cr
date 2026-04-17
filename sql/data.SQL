@@ -10,7 +10,7 @@ CREATE TABLE students (
 
 -- Insert a student
 INSERT INTO students (reg_no, name, email) VALUES
-('24535A0510', 'KOTHAVALA PAWAN KUMAR', 'pawankothavala78423@gmail.com');
+'22331A05D4', 'PEDAPATILASHYASARANYA','luckylashya07@gmail.com');
 
 -- Otps table
 CREATE TABLE otps (
